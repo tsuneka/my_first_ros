@@ -33,3 +33,8 @@ geometry_msgs::msg::Twist make_diagonal_cmd(double linear_speed, double angular_
   cmd.angular.z = angular_speed;
   return cmd;
 }
+
+geometry_msgs::msg::Twist make_stop_cmd()
+{
+  return geometry_msgs::msg::Twist();
+}
